@@ -21,7 +21,7 @@ jobs:
       - name: Record Rust version
         run: echo "RUST=$(rustc --version)" >> "$GITHUB_ENV"
       - name: Upload to codecov.io
-        uses: codecov/codecov-action@036b81c4b4e8314b391265bc226440f9e2117e2a
+        uses: codecov/codecov-action@v4
         with:
           fail_ci_if_error: true
           token: ${{ secrets.CODECOV_TOKEN }}
